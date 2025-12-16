@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>UMKM Kopi Nusantara</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Kopi Nusantara</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" href="index.html">Beranda</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="tentang.html">Tentang Kami</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="produk.html">Produk</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="galeri.html">Galeri</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="kontak.html">Kontak</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+    <!-- Pertemuan 1: Heading, Paragraf, Gambar, Link -->
+    <h1 align="center">UMKM Kopi Nusantara</h1>
+
+    <p align="center">
+        <img src="images/gambar1.jpg" alt="Kopi Nusantara" width="300">
+    </p>
+
+    <p align="center">
+        <a href="https://wa.me/6281234567890">Pesan Sekarang via WhatsApp</a>
+    </p>
+
+    <p>
+        UMKM Kopi Nusantara menghadirkan berbagai pilihan kopi terbaik dari seluruh pelosok Indonesia.
+        Kami berkomitmen menyajikan kopi berkualitas dengan cita rasa otentik, mulai dari Arabika, Robusta,
+        hingga Liberika.
+    </p>
+
+    <hr>
+    <!-- Pertemuan 2: Daftar Produk -->
+    <h2>Varian Kopi</h2>
+    <ul>
+        <li>Kopi Arabika Gayo</li>
+        <li>Kopi Arabika Petungkriyono</li>
+        <li>Kopi Robusta Batang</li>
+        <li>Kopi Robusta Temanggung</li>
+        <li>Kopi Robusta Linggoasri</li>
+        <li>Kopi Liberika Riau</li>
+    </ul>
+
+    <hr>
+    <!-- Pertemuan 3: Tabel Produk (sesuai gambar) -->
+    <h2 align="center">Daftar Produk Kopi Nusantara</h2>
+
+    <table border="1" cellspacing="0" cellpadding="8" align="center">
+        <tr bgcolor="#dcdcdc">
+            <th>Produk</th>
+            <th>Ukuran</th>
+            <th>Harga</th>
+            <th>Jenis Kopi</th>
+        </tr>
+        <tr>
+            <td>Kopi Arabika Gayo</td>
+            <td align="center">250g</td>
+            <td align="right">45000</td>
+            <td align="center">Arabika</td>
+        </tr>
+        <tr>
+            <td>Kopi Arabika Petungkriyono</td>
+            <td align="center">300g</td>
+            <td align="right">48500</td>
+            <td align="center">Arabika</td>
+        </tr>
+        <tr>
+            <td>Kopi Robusta Batang</td>
+            <td align="center">250g</td>
+            <td align="right">46000</td>
+            <td align="center">Robusta</td>
+        </tr>
+        <tr>
+            <td>Kopi Robusta Temanggung</td>
+            <td align="center">250g</td>
+            <td align="right">38000</td>
+            <td align="center">Robusta</td>
+        </tr>
+        <tr>
+           <td>Kopi Robusta Linggoasri</td>
+            <td align="center">225g</td>
+            <td align="right">35000</td>
+            <td align="center">Robusta</td>
+        </tr>
+        <tr>
+            <td>Kopi Liberika Riau</td>
+            <td align="center">250g</td>
+            <td align="right">42000</td>
+            <td align="center">Liberika</td>
+        </tr>
+    </table>
+
+    <p align="center"><i>Semua harga sudah termasuk PPN</i></p>
+
+    <!-- Contoh Flexbox Section tugas -->
+<section class="promo-section">
+    <div class="promo-box">
+        <h3>Promo Spesial</h3>
+        <p>Beli 2 Gratis 1 Untuk Semua Produk Arabika Gayo</p>
+    </div>
+    <div class="promo-box">
+        <h3>Kopi Fresh!</h3>
+        <p>Roasting baru setiap minggu, kualitas terjamin.</p>
+    </div>
+    <div class="promo-box">
+        <h3>Gratis Ongkir</h3>
+        <p>Khusus wilayah Jawa Tengah.</p>
+    </div>
+</section>
+
+<!-- Cek Kategori Usia -->
+<section>
+  <h3>Cek Kategori Usia Pelanggan</h3>
+  <input type="number" id="usiaInput" placeholder="Masukkan usia">
+  <button onclick="cekUsia()">Cek</button>
+  <p id="hasilUsia"></p>
+</section>
+<hr>
+<!-- Testimoni dengan Perulangan -->
+<section>
+  <h3>Testimoni Pelanggan</h3>
+  <ul id="listTestimoni"></ul>
+</section>
+<hr>
+<!-- Hitung Total Belanja -->
+<section>
+  <h3>Hitung Total Belanja</h3>
+  Harga Kopi (per pack): Rp 45.000<br><br>
+  Jumlah Beli: 
+  <input type="number" id="jumlahBeli">
+  <button onclick="hitungTotal()">Hitung</button>
+  <p id="hasilTotal"></p>
+</section>
+
+ <script src="script.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
